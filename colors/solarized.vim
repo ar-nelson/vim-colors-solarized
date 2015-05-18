@@ -579,9 +579,11 @@ exe "hi! Special"        .s:fmt_none   .s:fg_red    .s:bg_none
 "       *Special         any special symbol
 "        SpecialChar     special character in a constant
 "        Tag             you can use CTRL-] on this
-"        Delimiter       character that needs attention
 "        SpecialComment  special things inside a comment
 "        Debug           debugging statements
+
+exe "hi! Delimiter"      .s:fmt_none   .s:fg_base00 .s:bg_none
+"        Delimiter       some syntax files (Haskell) use this for parens, etc.
 
 exe "hi! Underlined"     .s:fmt_none   .s:fg_violet .s:bg_none
 "       *Underlined      text that stands out, HTML links
