@@ -844,6 +844,15 @@ hi! link hsDelimTypeExport   Delimiter
 hi! link hsModuleStartLabel  hsStructure
 hi! link hsModuleWhereLabel  hsModuleStartLabel
 
+" For use with an alternate Haskell syntax file:
+" https://github.com/ar-nelson/haskell-vim
+exe "hi! haskellImportKeywords" . s:fg_magenta.s:bg_none   .s:fmt_none
+exe "hi! haskellString"         . s:fg_violet .s:bg_none   .s:fmt_none
+exe "hi! haskellType"           . s:fg_cyan   .s:bg_none   .s:fmt_none
+exe "hi! haskellOperators"      . s:fg_base1  .s:bg_none   .s:fmt_none
+exe "hi! haskellDot"            . s:fg_base1  .s:bg_none   .s:fmt_none
+exe "hi! haskellBacktick"       . s:fg_base1  .s:bg_none   .s:fmt_none
+
 " following is for the haskell-conceal plugin
 " the first two items don't have an impact, but better safe
 exe "hi! hsNiceOperator"     . s:fg_cyan   .s:bg_none   .s:fmt_none
